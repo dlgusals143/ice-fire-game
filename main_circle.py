@@ -19,8 +19,8 @@ class Main_circle():
         self.color = tuple(lst)
     
     def draw(self, screen):
-        screen.blit(self.circle_img, (self.x, self.y))
         pygame.draw.circle(self.circle_img, self.color, (self.radius//2, self.radius//2), self.radius//2)
+        screen.blit(self.circle_img, (self.x, self.y))
 
 class Orbit():        
     def __init__(self, screen, x, y, radius, outline):
